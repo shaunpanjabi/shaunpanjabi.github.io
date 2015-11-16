@@ -76,6 +76,8 @@ p.intro{
 	 margin-bottom: 35px;
 	 font-size: 21px;
 	 line-height: 28px;
+	 -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+	 animation-delay: 1s;
 }
 
 p.inverse-big{
@@ -153,6 +155,8 @@ p.weight4{
 	 font-style: normal;
 	 font-size: 36px;
 	 line-height: 30px;
+	-webkit-animation-delay: 0.25s; /* Chrome, Safari, Opera */
+    animation-delay: 0.25s;
 }
 
 p.weight5{
@@ -217,6 +221,10 @@ p.weight12{
 	 font-style: normal;
 	 font-size: 36px;
 	 line-height: 30px;
+}
+a.linkedin{
+	-webkit-animation-delay: 2.3s; /* Chrome, Safari, Opera */
+    animation-delay: 2.3s;
 }
 a:link {text-decoration:none;}    /* unvisited link */
 a:visited {text-decoration:none;} /* visited link */
