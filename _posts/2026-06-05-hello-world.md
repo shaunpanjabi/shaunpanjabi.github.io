@@ -2,6 +2,7 @@
 layout: post
 title: "Hello, world"
 date: 2026-06-05
+description: "Moving the blog off WordPress to a Markdown-and-Jekyll setup hosted on GitHub Pages."
 ---
 
 First post on the new setup. I moved off WordPress — this blog is now just

@@ -3,13 +3,35 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.full_title %}{{ page.full_title }}{% elsif page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{{ page.description | default: site.description | escape }}">
   <meta name="google-site-verification" content="fjGwYDZDsmcpA8d7OGALfTUn2dXXozdSG-4-GbxkxGU">
+  {% seo %}
+  {% feed_meta %}
   <link rel="icon" type="image/svg+xml" href="{{ '/favicon.svg' | relative_url }}">
   <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
   <link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | relative_url }}">
   <link rel="stylesheet" href="{{ '/css/terminal.css' | relative_url }}">
+  {% if page.body_class == "home" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Shaun Panjabi",
+      "jobTitle": "Sr. Director of Engineering",
+      "url": {{ site.url | jsonify }},
+      "email": "mailto:shaunpanjabi@gmail.com",
+      "worksFor": { "@type": "Organization", "name": "Airvet", "url": "https://airvet.com" },
+      "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of California, Irvine" },
+      "knowsAbout": ["Software Engineering", "Engineering Leadership", "Go", "Python", "Distributed Systems", "Kubernetes"],
+      "sameAs": [
+        "https://github.com/shaunpanjabi",
+        "https://www.linkedin.com/in/shaunpanjabi"
+      ]
+    }
+  }
+  </script>
+  {% endif %}
 </head>
 <body class="{{ page.body_class }}">
   <main class="window">

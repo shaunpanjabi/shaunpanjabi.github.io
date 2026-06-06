@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="-10%" r="90%">
+      <stop offset="0%" stop-color="#11161f"/>
+      <stop offset="100%" stop-color="#0b0e14"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- terminal window -->
+  <rect x="100" y="90" width="1000" height="450" rx="16" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+  <!-- titlebar -->
+  <rect x="100" y="90" width="1000" height="56" rx="16" fill="#161b22"/>
+  <rect x="100" y="120" width="1000" height="26" fill="#161b22"/>
+  <line x1="100" y1="146" x2="1100" y2="146" stroke="#30363d" stroke-width="2"/>
+  <circle cx="134" cy="118" r="7" fill="#ff5f56"/>
+  <circle cx="160" cy="118" r="7" fill="#ffbd2e"/>
+  <circle cx="186" cy="118" r="7" fill="#27c93f"/>
+  <text x="600" y="124" text-anchor="middle" font-family="SF Mono, Menlo, monospace" font-size="20" fill="#768390">shaun@shaunlp: ~</text>
+  <!-- content -->
+  <g font-family="SF Mono, Menlo, monospace">
+    <text x="150" y="240" font-size="30" fill="#6ee787">shaun@shaunlp:~$ <tspan fill="#c9d1d9">whoami</tspan></text>
+    <text x="150" y="320" font-size="54" font-weight="700" fill="#ffffff">Shaun Panjabi</text>
+    <text x="150" y="372" font-size="28" fill="#768390"># Sr. Director of Engineering @ Airvet</text>
+    <text x="150" y="470" font-size="26" fill="#6ee787">ls links/</text>
+    <text x="150" y="510" font-size="24" fill="#58a6ff">resume  blog  github  linkedin<tspan fill="#6ee787">  ▋</tspan></text>
+  </g>
+</svg>

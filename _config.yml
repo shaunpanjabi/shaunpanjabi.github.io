@@ -1,9 +1,34 @@
 title: Shaun Panjabi
-description: Sr. Director of Engineering @ Airvet — building software for on-demand vet care.
+tagline: Sr. Director of Engineering @ Airvet
+description: Shaun Panjabi — Sr. Director of Engineering at Airvet, building software for on-demand vet care. Engineering leadership, Go, Python, and distributed systems.
 url: https://shaunlp.com
+lang: en
+
+# Used by jekyll-seo-tag for author/entity metadata and JSON-LD
+author:
+  name: Shaun Panjabi
+  email: shaunpanjabi@gmail.com
+social:
+  name: Shaun Panjabi
+  links:
+    - https://github.com/shaunpanjabi
+    - https://www.linkedin.com/in/shaunpanjabi
 
 permalink: /blog/:title/
 markdown: kramdown
+
+# Default 1200x630 social-share image on every page. seo-tag reads page.image
+# (not site.image), so set it here; it also makes twitter:card large-image.
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /og-image.png
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
 
 exclude:
   - Gemfile

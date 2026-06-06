@@ -13,3 +13,11 @@ gem "bigdecimal"
 gem "csv"
 gem "base64"
 gem "logger"
+
+# SEO / discoverability: emits <title>, meta description, Open Graph, Twitter
+# Card and JSON-LD tags ({% seo %}); generates sitemap.xml and feed.xml.
+group :jekyll_plugins do
+  gem "jekyll-seo-tag", "~> 2.8"
+  gem "jekyll-sitemap", "~> 1.4"
+  gem "jekyll-feed", "~> 0.17"
+end

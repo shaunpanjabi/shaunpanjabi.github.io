@@ -63,6 +63,8 @@ body.home { align-items: center; }
 .prompt::before { content: "shaun@shaunlp:~$ "; color: var(--green); }
 .out { margin: 0 0 18px; }
 .out .muted, .muted { color: var(--muted); }
+/* The home <h1> carries the name for SEO but must read as a plain prompt line. */
+h1.out { font-size: inherit; font-weight: inherit; line-height: inherit; color: var(--fg); }
 
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
