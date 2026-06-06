@@ -1,0 +1,18 @@
+---
+layout: default
+title: blog
+permalink: /blog/
+---
+<p class="prompt">ls ~/blog</p>
+{% if site.posts.size == 0 %}
+<p class="out muted"># no posts yet</p>
+{% else %}
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li>
+    <span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}

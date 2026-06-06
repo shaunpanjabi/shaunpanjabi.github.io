@@ -1,0 +1,15 @@
+title: Shaun Panjabi
+description: Sr. Director of Engineering @ Airvet — building software for on-demand vet care.
+url: https://shaunlp.com
+
+permalink: /blog/:title/
+markdown: kramdown
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - archive/
+  - vendor/
+  - resume.pdf
+  - updated_resume.pdf
